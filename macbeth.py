@@ -19,8 +19,9 @@ for line in macbeth:
 			words[word] = words.get(word, 0) + 1
 #sort all words by their value
 sorted_words = sorted(words.items(), key = operator.itemgetter(1))
-#sor by decending order
+#sort by decending order
 sorted_words = list(reversed(sorted_words))
-
+#get the second most common word-value pair
 second_word = sorted_words[1]
+#print
 print("The second most common word greater than 4 characters in Macbet is \'%s\', occurring a total of %s times" % (second_word[0], second_word[1]))
