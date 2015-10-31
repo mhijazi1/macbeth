@@ -15,7 +15,7 @@ for line in macbeth:
 		if(len(word) > 4):
 			#set all words to lowercase (this is to make sure we don't counte Macbeth and MACBETH as different words)
 			word = word.lower()
-			#if the word exists in our dictionary iterate, otherwise initialize it with a value of 1
+			#if the word exists in our dictionary iterate its value, otherwise initialize it with a value of 1
 			words[word] = words.get(word, 0) + 1
 #sort all words by their value
 sorted_words = sorted(words.items(), key = operator.itemgetter(1))
